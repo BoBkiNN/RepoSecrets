@@ -7,7 +7,7 @@ plugins {
 
 group = "com.github.BoBkiNN"
 
-version = "1.0.0"
+version = properties["version"] as String
 
 repositories {
     mavenCentral()

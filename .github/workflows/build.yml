@@ -1,0 +1,31 @@
+name: Build
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
+      with:
+        gradle-version: wrapper
+
+    - name: Change wrapper permissions
+      run: chmod +x ./gradlew
+
+    - name: Build with Gradle Wrapper
+      run: ./gradlew build
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: Built files
+        path: build/libs/*.jar

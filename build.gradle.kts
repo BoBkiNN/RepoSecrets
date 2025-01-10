@@ -5,7 +5,8 @@ plugins {
     kotlin("jvm") version "1.9.20"
 }
 
-group = "xyz.bobkinn.repoSecrets"
+group = "com.github.BoBkiNN"
+
 version = "1.0.0"
 
 repositories {
@@ -24,8 +25,8 @@ java {
 gradlePlugin {
     plugins {
         create("repo-secrets") {
-            id = "xyz.bobkinn.repoSecrets"
-            implementationClass = "dev.portalgenesis.repoSecrets.gradle.RepoSecretsPlugin"
+            id = "com.github.BoBkiNN"
+            implementationClass = "xyz.bobkinn.repoSecrets.gradle.RepoSecretsPlugin"
         }
     }
 }

@@ -1,3 +1,6 @@
+<p align="center">
+<a href="https://jitpack.io/#BoBkiNN/RepoSecrets"><img style="align: center" 
+src="https://jitpack.io/v/BoBkiNN/RepoSecrets.svg" alt="JitPack release"></a></p>
 ## Simple gradle plugin that loads properties file and adds it to project properties
 
 ### Usage:

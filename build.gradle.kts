@@ -25,7 +25,7 @@ java {
 gradlePlugin {
     plugins {
         create("repo-secrets") {
-            id = "com.github.BoBkiNN"
+            id = "com.github.BoBkiNN.RepoSecrets"
             implementationClass = "xyz.bobkinn.repoSecrets.gradle.RepoSecretsPlugin"
         }
     }

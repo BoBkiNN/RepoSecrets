@@ -53,7 +53,7 @@ If no file is found then no exception is loaded
 
 ### Additional extension methods:
 * `Project.loadCredProperties(file: String = DEFAULT_CRED_PROPERTIES)`: loads file, can be called manually if plugin not applied
-* `PublishingExtension.printPublishResults()`: prints pretty list of artifacts and repositories (without credentials) where artifacts was uploaded
+* `PublishingExtension.printPublishResults(pubName: String)`: prints pretty list of artifacts and repositories (without credentials) where artifacts was uploaded
 
 ### TODO:
 * Ability to throw exception when no file is found or no repo is found, or it requires auth

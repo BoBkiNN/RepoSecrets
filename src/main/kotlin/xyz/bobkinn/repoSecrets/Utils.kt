@@ -83,9 +83,12 @@ fun Project.loadCredProperties(file: String = DEFAULT_CRED_PROPERTIES) {
     }
 }
 
+/**
+ * @param pubName [MavenPublication] name
+ */
 @Suppress("unused")
-fun PublishingExtension.printPublishResults() {
-    val publication = this.publications.named("maven", MavenPublication::class.java).get()
+fun PublishingExtension.printPublishResults(pubName: String) {
+    val publication = this.publications.named(pubName, MavenPublication::class.java).get()
     val ls = publication.artifacts
     println("Published ${ls.size} artifact(s)")
     ls.forEach { artifact ->

@@ -63,3 +63,4 @@ If no file is found then no exception is loaded
 * Ability to throw exception when no file is found or no repo is found, or it requires auth
 * Plugin settings
 * Lazy-loaded file to apply settings
+* Move to ini or toml or other format to set repositories options

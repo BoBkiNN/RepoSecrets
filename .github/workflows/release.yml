@@ -40,6 +40,6 @@ jobs:
         draft: true
         prerelease: false
         tag_name: ${{ env.tag_name }}
-        files: build/libs/.jar
+        files: build/libs/*.jar
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
